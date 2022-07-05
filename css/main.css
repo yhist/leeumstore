@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url('font.css');
+
+@font-face {
+  font-family: 'Aktiv Grotesk', 'Apple SD Gothic Neo';
+  src: url('../font/Trial_aktivgrotesk/TrialStaticFonts/AktivGrotesk_Trial_Bd.ttf') format('ttf'),
+    url('../font/Trial_aktivgrotesk/TrialStaticFonts/AktivGrotesk_Trial_Md.ttf') format('ttf'),
+    url('../font/Trial_aktivgrotesk/TrialStaticFonts/AktivGrotesk_Trial_Lt.ttf') format('ttf'),
+    url('../font/산들고딕/AppleSDGothicNeoB.woff') format('woff'),
+    url('../font/산들고딕/AppleSDGothicNeoB.woff') format('woff'),
+    url('../font/산들고딕/AppleSDGothicNeoH.woff') format('woff'),
+    url('../font/산들고딕/AppleSDGothicNeoL.ttf') format('woff'),
+    url('../font/산들고딕/AppleSDGothicNeo.woff') format('woff'),
+    url('../font/산들고딕/AppleSDGothicNeoB.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: url('../font/산들고딕/AppleSDGothicNeoB.woff') format('woff'),
+    url('../font/산들고딕/AppleSDGothicNeoB.woff') format('woff'),
+    url('../font/산들고딕/AppleSDGothicNeoH.woff') format('woff'),
+    url('../font/산들고딕/AppleSDGothicNeoL.ttf') format('woff'),
+    url('../font/산들고딕/AppleSDGothicNeo.woff') format('woff'),
+    url('../font/산들고딕/AppleSDGothicNeoB.woff') format('woff');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline-style: none; */
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Aktiv Grotesk", "Aktiv Grotesk KR", "Apple SD Gothic Neo", "맑은 고딕", "malgun gothic", 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.4;
+}
+
+/* 공통클래스 */
+.clearfix::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
