@@ -118,12 +118,59 @@ float: right;
   height: 630px;
   background: url('../images/visual.jpeg.jpg') no-repeat center;
   background-size: cover;
+  padding-bottom: 30px;
 
 }
 
  /* 아티스트 */
 .artist {
+  position: relative;
+  display: block;
+}
 
+.artist h2 {
+  font-size: 22px;
+  padding: 90px 0 20px;
+}
+
+.artist-list {
+  position: relative;
+  display: block;
+}
+
+.artist-list li {
+  float: left;
+  position: relative;
+  display: block;
+  margin-right: 20px;
+}
+
+.artist-list li a {
+  text-align: center;
+}
+
+.artist-list li:nth-child(3) {
+  margin-right: none;
+}
+.artist-list li:nth-child(6) {
+  margin-right: none;
+}
+.artist-list li:nth-child(9) {
+  margin-right: none;
+}
+.artist-list li:nth-child(12) {
+  margin-right: none;
+}
+
+.artist-list li a img {
+  position: relative;
+  width: 418px;
+  height: 498px;
+}
+
+.artist-list li a span {
+  position: relative;
+  display: block;
 }
 
  /* 세라믹 */
