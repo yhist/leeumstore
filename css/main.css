@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  font-size: 22px;
+}
+
 html {
   font-size: 10px;
 }
@@ -33,7 +37,7 @@ body {
   color: #000;
   line-height: 1.2em;
   font-weight: 400;
-  
+
 }
 
 /* 공통클래스 */
@@ -64,9 +68,9 @@ body {
 
 }
 
- /* 전체 레이아웃 */
+/* 전체 레이아웃 */
 
- /* 상단 */
+/* 상단 */
 .header {
   position: relative;
   display: block;
@@ -74,20 +78,23 @@ body {
 }
 
 .header .inner {
-position: relative;
-display: block;
-padding: 60px 0 50px;
+  position: relative;
+  display: block;
+  padding: 60px 0 50px;
 }
+
 .header-logo {
-position: relative;
-display: block;
-float: left;
+  position: relative;
+  display: block;
+  float: left;
 }
+
 .header-icon {
-position: relative;
-display: block;
-float: right;
+  position: relative;
+  display: block;
+  float: right;
 }
+
 .header-icon a {
   margin-left: 23px;
 }
@@ -99,7 +106,7 @@ float: right;
   display: block;
 }
 
- /* 사이드 메뉴 */
+/* 사이드 메뉴 */
 .side-menu {
   position: fixed;
   top: 60px;
@@ -110,7 +117,7 @@ float: right;
 
 }
 
- /* 비주얼 */
+/* 비주얼 */
 .visual {
   position: relative;
   display: block;
@@ -122,85 +129,128 @@ float: right;
 
 }
 
- /* 아티스트 */
+/* 아티스트 */
 .artist {
   position: relative;
   display: block;
 }
+.artist .inner {}
 
 .artist h2 {
-  font-size: 22px;
   padding: 90px 0 20px;
 }
 
 .artist-list {
   position: relative;
   display: block;
+  width: 100%;
 }
-
-.artist-list li {
-  float: left;
+.artist-list > li {
   position: relative;
   display: block;
-  margin-right: 20px;
+  float: left;
+  width: 32.2%;
+  margin-right: 1.7%;
+  margin-top: 90px;
 }
 
-.artist-list li a {
+.artist-list > li:nth-child(3n) {
+  margin-right: 0;
+}
+.artist-list > li:nth-child(1) {
+  margin-top: 0;
+}
+.artist-list > li:nth-child(2) {
+  margin-top: 0;
+}
+.artist-list > li:nth-child(3) {
+  margin-top: 0;
+}
+
+.artist-list > li a {
+  position: relative;
+  display: block;
   text-align: center;
 }
 
-.artist-list li:nth-child(3) {
-  margin-right: none;
-}
-.artist-list li:nth-child(6) {
-  margin-right: none;
-}
-.artist-list li:nth-child(9) {
-  margin-right: none;
-}
-.artist-list li:nth-child(12) {
-  margin-right: none;
-}
-
-.artist-list li a img {
+.artist-list > li a div {
   position: relative;
-  width: 418px;
-  height: 498px;
+  display: block;
+  margin-bottom: 15px;
+
 }
 
-.artist-list li a span {
+.artist-list > li a div img {
+width: 419px;
+height: 498px;
+
+}
+.artist-list > li a span {
+  position: relative;
+  display: block;
+  font-size: 12px;
+  color: #555555;
+}
+
+/* 더보기 버튼 */
+.more {
   position: relative;
   display: block;
 }
 
- /* 세라믹 */
-.ceramic {
-
+.more .inner {
+  padding-top: 165px;
 }
 
- /* 글라스 */
-.glass {
-
+.more-bt {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  line-height: 46px;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 0 45px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
- /* 메탈 */
-.metal {
+.more-bt:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* 세라믹 */
+.ceramic {}
+
+.ceramic h2 {
+  padding-bottom: 20px;
+}
+
+.sw-ceramic {
 
 }
+.sw-ceramic-list {}
+
+.sw-ceramic-list li img {
+  width: 33.3%;
+}
+
+
+
+/* 글라스 */
+.glass {}
+
+/* 메탈 */
+.metal {}
 
 /* 페이퍼 */
-.paper {
-
-}
+.paper {}
 
 /* 페브릭 */
-.fabric {
-
-}
+.fabric {}
 
 /* 하단 */
-.footer {
-
-}
-
-
+.footer {}
