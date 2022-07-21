@@ -233,9 +233,12 @@ height: 498px;
 
 }
 .sw-ceramic-list {}
+.sw-ceramic-list li {
+  margin-right: 1.53%;
+}
 
 .sw-ceramic-list li img {
-  width: 33.3%;
+  width: 32.3%;
 }
 
 
