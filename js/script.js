@@ -4,13 +4,15 @@ $(document).ready(function(){
 
 
 window.onload = function(){
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".sw-ceramic", {
+    loop: true,
     slidesPerView: 3,
     spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+    slidesPerGroup: 3,
+    navigation: {
+      nextEl: ".sw-next"
+    }
+
   });
 
 }

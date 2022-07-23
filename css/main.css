@@ -25,6 +25,11 @@ a {
 
 h2 {
   font-size: 22px;
+  position: relative;
+  display: block;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 html {
@@ -66,6 +71,17 @@ body {
 .container {
   padding-left: 275px;
 
+}
+
+.sw-next {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  width: 14px;
+  height: 24px;
+  background: url('../images/icon_next.svg') no-repeat center;
+  border: 0;
+  cursor: pointer;
 }
 
 /* 전체 레이아웃 */
@@ -110,7 +126,7 @@ body {
 .side-menu {
   position: fixed;
   top: 60px;
-  width: 275px;
+  width: 265px;
   padding-right: 20px;
   z-index: 9;
   background: #fff;
@@ -134,7 +150,6 @@ body {
   position: relative;
   display: block;
 }
-.artist .inner {}
 
 .artist h2 {
   padding: 90px 0 20px;
@@ -196,10 +211,7 @@ height: 498px;
 .more {
   position: relative;
   display: block;
-}
-
-.more .inner {
-  padding-top: 165px;
+  padding-top: 80px;
 }
 
 .more-bt {
@@ -223,28 +235,95 @@ height: 498px;
 
 
 /* 세라믹 */
-.ceramic {}
-
-.ceramic h2 {
-  padding-bottom: 20px;
+.ceramic h2 a {
+  position: relative;
+  display: inline-block;
 }
 
-.sw-ceramic {
-
-}
-.sw-ceramic-list {}
-.sw-ceramic-list li {
+.sw-list li {
+  position: relative;
   margin-right: 1.53%;
-}
-
-.sw-ceramic-list li img {
   width: 32.3%;
+
+}
+.sw-list li a{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.sw-list li img {
+  width: 100%;
+  height: 490px;
+  transition: all 0.3s;
+
+
+}
+.main-img {
+  /* position: absol; */
+  /* transition: all 0.5s; */
+  opacity: 1;
+}
+.change-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+} 
+
+.sw-list li:hover .main-img{
+  opacity: 0;
 }
 
+.sw-list li:hover .change-img {
+  opacity: 1;
+}
 
 
 /* 글라스 */
 .glass {}
+
+.glass h2 a {
+  position: relative;
+  display: inline-block;
+}
+
+.sw-ceramic-list li {
+  position: relative;
+  margin-right: 1.53%;
+  width: 32.3%;
+
+}
+.sw-ceramic-list li a{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.sw-ceramic-list li img {
+  width: 100%;
+  height: 490px;
+  transition: all 0.3s;
+
+
+}
+.main-img {
+  /* position: absol; */
+  /* transition: all 0.5s; */
+  opacity: 1;
+}
+.change-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+} 
+
+.sw-ceramic-list li:hover .main-img{
+  opacity: 0;
+}
+
+.sw-ceramic-list li:hover .change-img {
+  opacity: 1;
+}
 
 /* 메탈 */
 .metal {}
