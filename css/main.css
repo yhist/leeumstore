@@ -119,8 +119,57 @@ body {
   padding-right: 20px;
   z-index: 9;
   background: #fff;
-
 }
+
+.side-menu-list {}
+
+.side-menu-list > li {
+  padding-bottom: 10px;
+}
+
+.side-menu-list > li:first-child {
+  padding-bottom: 45px;
+}
+
+.side-menu-list > li > a {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #000;
+  font-family: "Aktiv Grotesk KR", sans-serif;
+}
+
+
+.pd-menu {}
+
+.sub-menu {
+  padding: 10px 0;
+}
+
+.sub-menu > li {
+  padding-bottom: 5px;
+}
+
+.sub-menu > li > a {
+  font-size: 11px;
+  font-weight: 400;
+  font-family: "Aktiv Grotesk", sans-serif;
+}
+
+.sub-menu-2 {}
+
+.sub-menu-2 li {
+  padding-bottom: 10px;
+  text-indent: 15px;
+}
+
+.sub-menu-2 li a {
+  font-size: 11px;
+  font-weight: 400;
+  font-family: "Aktiv Grotesk", sans-serif;
+}
+
 
 /* 비주얼 */
 .visual {
@@ -149,7 +198,8 @@ body {
   display: block;
   width: 100%;
 }
-.artist-list > li {
+
+.artist-list>li {
   position: relative;
   display: block;
   float: left;
@@ -158,38 +208,42 @@ body {
   margin-top: 90px;
 }
 
-.artist-list > li:nth-child(3n) {
+.artist-list>li:nth-child(3n) {
   margin-right: 0;
 }
-.artist-list > li:nth-child(1) {
-  margin-top: 0;
-}
-.artist-list > li:nth-child(2) {
-  margin-top: 0;
-}
-.artist-list > li:nth-child(3) {
+
+.artist-list>li:nth-child(1) {
   margin-top: 0;
 }
 
-.artist-list > li a {
+.artist-list>li:nth-child(2) {
+  margin-top: 0;
+}
+
+.artist-list>li:nth-child(3) {
+  margin-top: 0;
+}
+
+.artist-list>li a {
   position: relative;
   display: block;
   text-align: center;
 }
 
-.artist-list > li a div {
+.artist-list>li a div {
   position: relative;
   display: block;
   margin-bottom: 15px;
 
 }
 
-.artist-list > li a div img {
-width: 419px;
-height: 498px;
+.artist-list>li a div img {
+  width: 419px;
+  height: 498px;
 
 }
-.artist-list > li a span {
+
+.artist-list>li a span {
   position: relative;
   display: block;
   font-size: 12px;
@@ -235,7 +289,8 @@ height: 498px;
   width: 32.3%;
 
 }
-.sw-list li a{
+
+.sw-list li a {
   position: relative;
   display: block;
   width: 100%;
@@ -270,9 +325,9 @@ height: 498px;
   left: 0;
   top: 0;
   opacity: 0;
-} 
+}
 
-.sw-list li:hover .main-img{
+.sw-list li:hover .main-img {
   opacity: 0;
 }
 
@@ -288,6 +343,7 @@ height: 498px;
   position: relative;
   display: inline-block;
 }
+
 .sw-glass-next {
   position: absolute;
   right: 0;
@@ -305,11 +361,13 @@ height: 498px;
   width: 32.3%;
 
 }
-.sw-glass-list li a{
+
+.sw-glass-list li a {
   position: relative;
   display: block;
   width: 100%;
 }
+
 .sw-glass-list li img {
   width: 100%;
   height: 490px;
@@ -328,9 +386,9 @@ height: 498px;
   left: 0;
   top: 0;
   opacity: 0;
-} 
+}
 
-.sw-glass-list li:hover .main-img{
+.sw-glass-list li:hover .main-img {
   opacity: 0;
 }
 
@@ -345,6 +403,7 @@ height: 498px;
   position: relative;
   display: inline-block;
 }
+
 .sw-metal-next {
   position: absolute;
   right: 0;
@@ -362,11 +421,13 @@ height: 498px;
   width: 32.3%;
 
 }
-.sw-metal-list li a{
+
+.sw-metal-list li a {
   position: relative;
   display: block;
   width: 100%;
 }
+
 .sw-metal-list li img {
   width: 100%;
   height: 490px;
@@ -385,9 +446,9 @@ height: 498px;
   left: 0;
   top: 0;
   opacity: 0;
-} 
+}
 
-.sw-metal-list li:hover .main-img{
+.sw-metal-list li:hover .main-img {
   opacity: 0;
 }
 
@@ -396,7 +457,7 @@ height: 498px;
 }
 
 /* 페이퍼 */
-.paper {} 
+.paper {}
 
 .paper h2 a {
   position: relative;
@@ -420,11 +481,13 @@ height: 498px;
   width: 32.3%;
 
 }
-.sw-paper-list li a{
+
+.sw-paper-list li a {
   position: relative;
   display: block;
   width: 100%;
 }
+
 .sw-paper-list li img {
   width: 100%;
   height: 490px;
@@ -443,9 +506,9 @@ height: 498px;
   left: 0;
   top: 0;
   opacity: 0;
-} 
+}
 
-.sw-paper-list li:hover .main-img{
+.sw-paper-list li:hover .main-img {
   opacity: 0;
 }
 
@@ -479,11 +542,13 @@ height: 498px;
   width: 32.3%;
 
 }
-.sw-fabric-list li a{
+
+.sw-fabric-list li a {
   position: relative;
   display: block;
   width: 100%;
 }
+
 .sw-fabric-list li img {
   width: 100%;
   height: 490px;
@@ -502,9 +567,9 @@ height: 498px;
   left: 0;
   top: 0;
   opacity: 0;
-} 
+}
 
-.sw-fabric-list li:hover .main-img{
+.sw-fabric-list li:hover .main-img {
   opacity: 0;
 }
 
