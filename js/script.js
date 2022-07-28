@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // 펼침메뉴 만들기
-  
-  let 
+  let sideMenu = $('.side-menu');
+  // 
 });
 
 
