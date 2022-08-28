@@ -116,6 +116,7 @@ body {
   position: fixed;
   top: 60px;
   width: 265px;
+  height: 100vh;
   padding-right: 20px;
   z-index: 9;
   background: #fff;
@@ -135,19 +136,31 @@ body {
   font-size: 12px;
   font-weight: 600;
   line-height: 20px;
+  letter-spacing: 1px;
   color: #000;
   font-family: "Aktiv Grotesk KR", sans-serif;
 }
 
+.side-menu-list > li > a:hover {
+  color: #000;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.side-menu-list > li > a::after {
+
+}
+
 
 .pd-menu {}
-
 .sub-menu {
   padding: 10px 0;
+  display: none;
 }
 
 .sub-menu > li {
   padding-bottom: 5px;
+
 }
 
 .sub-menu > li > a {
@@ -156,7 +169,9 @@ body {
   font-family: "Aktiv Grotesk", sans-serif;
 }
 
-.sub-menu-2 {}
+.sub-menu-2 {
+  display: none;
+}
 
 .sub-menu-2 li {
   padding-bottom: 10px;
@@ -578,4 +593,89 @@ body {
 
 
 /* 하단 */
-.footer {}
+.footer {
+  position: relative;
+  display: block;
+  margin-top: 200px;
+  padding: 55px 0 55px 275px;
+  font-family: "Aktiv Grotesk KR", sans-serif;
+
+}
+
+.footer .inner {
+  position: relative;
+  display: block;
+
+}
+
+.footer-left {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-left-info {
+  position: relative;
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-left-info strong {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.footer-left-info .f-line {
+  position: relative;
+  margin-right: 10px;
+}
+.footer-left-info .f-line::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height: 1px;
+  background-color: #000;
+  transition: all 0.4s;
+}
+
+.footer-left-info .f-line:hover::after {
+  width: 100%;
+}
+.footer-left-info .mr-30 {
+  margin-right: 30px;
+}
+
+.footer-left-info .ml-25 {
+  margin-left: 25px;
+}
+
+.footer-left-address {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.footer-left-address span {
+  margin-right: 5px;
+}
+
+.footer-left-address a {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.footer-left-address a:hover {
+  text-decoration: none;
+}
+
+.footer-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+}
+
+
